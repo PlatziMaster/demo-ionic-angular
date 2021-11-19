@@ -7,5 +7,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <h1>{{ title }}</h1>
+  <input type="text" [(ngModel)]="title">
+
+  <ion-button id="btnTitle" (click)="setTitle('cambio')">setTitle</ion-button>
   <ion-button routerLink="/tasks">Go to Task page</ion-button>
 </ion-content>
